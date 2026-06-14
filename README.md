@@ -40,6 +40,16 @@ The AI company said it received an order at 5:21 p.m. ET, instructing it to susp
 [Index of Wholesaild and Retail Trade](https://open.dosm.gov.my/publications/iowrt_2026-04)
 
 ### kaggle
+Dark Hex? [link](https://www.kaggle.com/blog/dark-hex-game-arena#3468646)
+* A variant of the board game Hex
+* Two AI agents compete to connect opposite sides of a board
+* Key twist: fog of war (imperfect information)
+* You cannot see your opponent’s moves
+* You only discover them if you try placing a piece there
+* This turns it from a simple strategy game into a test of:
+ * reasoning under uncertainty
+ * opponent modeling
+ * exploration vs exploitation
 
 ### arxiv
 
