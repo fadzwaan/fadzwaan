@@ -4,3 +4,7 @@ what the f is 5G
 
 powershell cookbook
 https://www.certificationpoint.org/tutorials/windows_powershell_cookbook_3rd_edition.pdf
+
+
+
+[functional thinking, 1](https://github.com/ramosITBooks/FunctionalProgrammingBooks/blob/main/Functional%20Thinking.pdf)
