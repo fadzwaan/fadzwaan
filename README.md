@@ -33,6 +33,11 @@ An interesting exploration of how language models naturally mix languages during
 
 The AI company said it received an order at 5:21 p.m. ET, instructing it to suspend all access to the models by foreign nationals. It said that it believed there was a "misunderstanding" and that it is working to restore access to the models as soon as possible. Access to other models will not be affected by the export control directive.
 
+Allows run code without authentication
+Splunk Enterprise 10.0.0 to 10.0.6 - Fixed in 10.0.7
+Splunk Enterprise 10.2.0 to 10.2.3 - Fixed in 10.2.4
+Splunk Enterprise 10.4 - Not affected
+
 ![Preview](https://the-decoder.com/wp-content/uploads/2026/06/frontier_math_fable5.png)
 
 
