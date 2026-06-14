@@ -27,4 +27,11 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 
 An interesting exploration of how language models naturally mix languages during reasoning and generation. The article highlights why multilingual behavior isn't simply translation, but a consequence of knowledge representation across languages. Worth reading if you're interested in multilingual LLMs or prompt engineering.
 
+![Preview Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitE4uRkPKzQw_uUTSEzPgbuTByOaSNQeEHcANQCdYOtD8HJxqjIy9e0TIkkYeMN5QQghbvb1Nc4RJdwpGUD4ttQ8FqBpDAIMBe5Biw4zXIF-iYgl-vZPCGL1b5VNZpajQ8_cCPj7jx0DFABYuXLpyHYUSOe3jBKPsSej0y7TxrIHZwG_4m56TrDdTS9Ap1/s1700-e365/Anthropic-claude.jpg)
+
+The AI company said it received an order at 5:21 p.m. ET, instructing it to suspend all access to the models by foreign nationals. It said that it believed there was a "misunderstanding" and that it is working to restore access to the models as soon as possible. Access to other models will not be affected by the export control directive.
+
+
+Index of Wholesaild and Retail Trade
+https://open.dosm.gov.my/publications/iowrt_2026-04
 ---
