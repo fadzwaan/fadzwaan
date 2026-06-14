@@ -34,6 +34,9 @@ The AI company said it received an order at 5:21 p.m. ET, instructing it to susp
 ![Preview](https://the-decoder.com/wp-content/uploads/2026/06/frontier_math_fable5.png)
 
 
-Index of Wholesaild and Retail Trade
-https://open.dosm.gov.my/publications/iowrt_2026-04
+[Index of Wholesaild and Retail Trade](https://open.dosm.gov.my/publications/iowrt_2026-04)
+
+## Meme of the week
+
+![Preview](https://www.threads.com/@mniaap/post/DZhkBhcgXyu/media)
 ---
