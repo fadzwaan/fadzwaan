@@ -38,5 +38,5 @@ The AI company said it received an order at 5:21 p.m. ET, instructing it to susp
 
 ## Meme of the week
 
-![Preview](https://www.threads.com/@mniaap/post/DZhkBhcgXyu/media)
+![Preview](https://instagram.fkul2-3.fna.fbcdn.net/v/t51.82787-15/724243012_17894203086515858_7283832536159265742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkxODU3MTU4NTA5NDY0Njk1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTE3OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wnxak-nZW-sQ7kNvwG8Fp8V&_nc_oc=AdrEDVOQ2pT16n4oaKLExl0VBeNuLrlwRPe3PGOgfr4EYaZcbYJrZvsY-FJzSSD07MR1TOC5KO8b9aPO0_KY3wO2&_nc_ad=z-m&_nc_cid=1220&_nc_zt=23&_nc_ht=instagram.fkul2-3.fna&_nc_gid=r6ONFmdymYFvndzkxpQ3vQ&_nc_ss=7a22e&oh=00_Af9f23VNP8isrzkYqjsT_CerZKH1_v8-lS7dIDpkBerWhA&oe=6A33F54E)
 ---
