@@ -75,8 +75,4 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > you can zip your commit [git archive](https://git-scm.com/docs/git-archive)
 
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/fadzwaan/fadzwaan/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/fadzwaan/fadzwaan/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/fadzwaan/fadzwaan/output/github-contribution-grid-snake.svg">
-</picture>
+![7-day heatmap](assets/heatmap.svg)
