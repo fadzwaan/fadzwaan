@@ -23,10 +23,9 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 ### huggingface blog
 **Source:** https://huggingface.co/blog/ServiceNow-AI/code-switching
 
-![Preview Image](https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/KjE9EikoFswYiJrepz4R4.png)
+![Preview Image](https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/KjE9EikoFswYiJrepz4R4.png)](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/HHvNyFV4Hq5XBrzTNZEG2.png)
 
-An interesting exploration of how language models naturally mix languages during reasoning and generation. The article highlights why multilingual behavior isn't simply translation, but a consequence of knowledge representation across languages. Worth reading if you're interested in multilingual LLMs or prompt engineering.
-
+The MolmoMotion architecture. The shared input to the Molmo 2 backbone consists of image tokens of RGB observations, text tokens of action description, and 2D query point feature tokens sampled from the Molmo 2 vision encoder. MolmoMotion-AR encodes the initial 3D query coordinates and decodes future trajectories as quantized coordinate text, while MolmoMotion-FM represents them directly in continuous 3D coordinate space.
 ### the hacker news 
 
 ![Preview Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitE4uRkPKzQw_uUTSEzPgbuTByOaSNQeEHcANQCdYOtD8HJxqjIy9e0TIkkYeMN5QQghbvb1Nc4RJdwpGUD4ttQ8FqBpDAIMBe5Biw4zXIF-iYgl-vZPCGL1b5VNZpajQ8_cCPj7jx0DFABYuXLpyHYUSOe3jBKPsSej0y7TxrIHZwG_4m56TrDdTS9Ap1/s1700-e365/Anthropic-claude.jpg)
