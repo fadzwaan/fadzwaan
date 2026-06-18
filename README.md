@@ -23,7 +23,7 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 ### huggingface blog
 **Source:** https://huggingface.co/blog/ServiceNow-AI/code-switching
 
-![Preview Image](https://cdn-uploads.huggingface.co/production/uploads/6977dd4e7754c316dbc9f4b3/KjE9EikoFswYiJrepz4R4.png)](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/HHvNyFV4Hq5XBrzTNZEG2.png)
+![p](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/HHvNyFV4Hq5XBrzTNZEG2.png)
 
 The MolmoMotion architecture. The shared input to the Molmo 2 backbone consists of image tokens of RGB observations, text tokens of action description, and 2D query point feature tokens sampled from the Molmo 2 vision encoder. MolmoMotion-AR encodes the initial 3D query coordinates and decodes future trajectories as quantized coordinate text, while MolmoMotion-FM represents them directly in continuous 3D coordinate space.
 ### the hacker news 
