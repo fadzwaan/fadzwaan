@@ -57,6 +57,9 @@ Dark Hex? [link](https://www.kaggle.com/blog/dark-hex-game-arena#3468646)
  * opponent modeling
  * exploration vs exploitation
 
+Here are data for retina related diseases
+[kaggle](https://www.kaggle.com/datasets/juanschafle/dna-methylation-data-epigenetic-biomarkers/data)
+
 ### arxiv
 
 Trying to reconstruct the future option price (at maturity T) from current observed option prices by running the Black–Scholes equation forward in time. [link](https://arxiv.org/html/2606.12450v1)
