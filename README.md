@@ -39,6 +39,8 @@ Splunk Enterprise 10.4 - Not affected
 
 ![Preview](https://the-decoder.com/wp-content/uploads/2026/06/frontier_math_fable5.png)
 
+iPhone XS, XS Max, and XR; the iPhone 11, 11 Pro, 11 Pro Max; the iPhone SE (2nd generation); the iPad Air 3rd gen, iPad mini 5th gen, and iPad 8th gen; Apple Watch Series 4 and 5 not safe. [here](https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html?m=1)
+
 
 ### opendosm
 [Index of Wholesaild and Retail Trade](https://open.dosm.gov.my/publications/iowrt_2026-04)
