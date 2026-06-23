@@ -26,6 +26,33 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 ![p](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/HHvNyFV4Hq5XBrzTNZEG2.png)
 
 The MolmoMotion architecture. The shared input to the Molmo 2 backbone consists of image tokens of RGB observations, text tokens of action description, and 2D query point feature tokens sampled from the Molmo 2 vision encoder. MolmoMotion-AR encodes the initial 3D query coordinates and decodes future trajectories as quantized coordinate text, while MolmoMotion-FM represents them directly in continuous 3D coordinate space.
+
+checkout this PP-OCRv6 , got 86.2% values of Hmean. [more](https://huggingface.co/blog/PaddlePaddle/pp-ocrv6)
+
+![Preview Image](<img width="3840" height="1494" alt="image" src="https://github.com/user-attachments/assets/2c957eda-2823-4cb8-8108-1b74a32241d2" />
+)
+
+```python
+from paddleocr import PaddleOCR
+
+# Model: PP-OCRv6_medium(Default)
+# Backend: Paddle Inference(Default)
+ocr = PaddleOCR(
+    use_doc_orientation_classify=False,
+    use_doc_unwarping=False,
+    use_textline_orientation=False,
+    enable_mkldnn=False,  #change this or you can try downgrading paddlepaddle==3.2.2 or adjust runtime configurations.
+
+)
+result = ocr.predict("https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/general_ocr_002.png")
+
+for res in result:
+    res.print()
+    res.save_to_img("output")
+    res.save_to_json("output")
+
+```
+
 ### the hacker news 
 
 ![Preview Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitE4uRkPKzQw_uUTSEzPgbuTByOaSNQeEHcANQCdYOtD8HJxqjIy9e0TIkkYeMN5QQghbvb1Nc4RJdwpGUD4ttQ8FqBpDAIMBe5Biw4zXIF-iYgl-vZPCGL1b5VNZpajQ8_cCPj7jx0DFABYuXLpyHYUSOe3jBKPsSej0y7TxrIHZwG_4m56TrDdTS9Ap1/s1700-e365/Anthropic-claude.jpg)
