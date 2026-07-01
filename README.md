@@ -8,7 +8,7 @@
 | 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.4 mil** | 1Q 2026 |
 | 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **5.4%** | 1Q 2026 |
 | 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **2.9%** | Mar 2026 |
-| 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **1.9%** | Apr 2026 |
+| 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **2.0%** | May 2026 |
 | 🏭 [Production Costs](https://open.dosm.gov.my/dashboard/producer-prices) | **+5.4%** | Apr 2026 |
 | 🔧 [Manufacturing Output](https://open.dosm.gov.my/dashboard/manufacturing-statistics) | **+5.3%** | Mar 2026 |
 | ⚙️ [Industrial Production](https://open.dosm.gov.my/dashboard/industrial-production) | **+3.1%** | Mar 2026 |
@@ -32,6 +32,7 @@ checkout this PP-OCRv6 , got 86.2% values of Hmean. [more](https://huggingface.c
 ![Preview Image](<img width="3840" height="1494" alt="image" src="https://github.com/user-attachments/assets/2c957eda-2823-4cb8-8108-1b74a32241d2" />
 )
 
+
 ```python
 from paddleocr import PaddleOCR
 
@@ -52,6 +53,8 @@ for res in result:
     res.save_to_json("output")
 
 ```
+The best AI systems will increasingly be specialized, not general-purpose. The authors argue this isn't just an engineering choice—it is a consequence of mathematics, biology, economics, and machine learning all reaching the same conclusion. [read here](https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable)
+
 
 ### the hacker news 
 
@@ -86,6 +89,10 @@ Dark Hex? [link](https://www.kaggle.com/blog/dark-hex-game-arena#3468646)
 
 Here are data for retina related diseases
 [kaggle](https://www.kaggle.com/datasets/juanschafle/dna-methylation-data-epigenetic-biomarkers/data)
+
+This dataset contains JSON replays of completed episodes from a Kaggle simulations competition. Replays are selected daily, ranked by average agent rating, and capped at 20 GiB per day. See manifest.csv for the list of included episodes and their scores.
+
+[kaggle](https://www.kaggle.com/datasets/kaggle/pokemon-tcg-ai-battle-episodes-2026-06-29/data)
 
 ### arxiv
 
