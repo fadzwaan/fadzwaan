@@ -5,11 +5,11 @@
 
 | Indicator | Value | Period |
 |---|---|---|
-| 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.4 mil** | 1Q 2026 |
+| 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.2 mil** | 1Q 2026 |
 | 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **5.4%** | 1Q 2026 |
-| 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **2.9%** | Mar 2026 |
+| 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Apr 2026 | Increase Since Apr | 
 | 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **2.0%** | May 2026 |
-| 🏭 [Production Costs](https://open.dosm.gov.my/dashboard/producer-prices) | **+5.4%** | Apr 2026 |
+| 🏭 [Production Costs](https://open.dosm.gov.my/dashboard/producer-prices) | **+7.8%** | May 2026 | Increase Since April | 
 | 🔧 [Manufacturing Output](https://open.dosm.gov.my/dashboard/manufacturing-statistics) | **+9.1%** | Apr 2026 |
 | ⚙️ [Industrial Production](https://open.dosm.gov.my/dashboard/industrial-production) | **+8.2%** | Apr 2026 |
 | 🛍️ [Wholesale & Retail Trade](https://open.dosm.gov.my/dashboard/wholesale-retail-trade) | **+6.2%** | Apr 2026 |
@@ -20,79 +20,24 @@
 
 Interesting articles, papers, visualizations, and technical deep dives that I found valuable. Each entry includes a short personal takeaway or review.
 
-### huggingface blog
-**Source:** https://huggingface.co/blog/ServiceNow-AI/code-switching
+### huggingface 
 
-![p](https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/HHvNyFV4Hq5XBrzTNZEG2.png)
-
-The MolmoMotion architecture. The shared input to the Molmo 2 backbone consists of image tokens of RGB observations, text tokens of action description, and 2D query point feature tokens sampled from the Molmo 2 vision encoder. MolmoMotion-AR encodes the initial 3D query coordinates and decodes future trajectories as quantized coordinate text, while MolmoMotion-FM represents them directly in continuous 3D coordinate space.
-
-checkout this PP-OCRv6 , got 86.2% values of Hmean. [more](https://huggingface.co/blog/PaddlePaddle/pp-ocrv6)
-
-![Preview Image](<img width="3840" height="1494" alt="image" src="https://github.com/user-attachments/assets/2c957eda-2823-4cb8-8108-1b74a32241d2" />
-)
+> Model Routing is Simple . Until It Isn't [read](https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt)
+routing is not about choosing model its about optimizing sistem. choosing model are one variable , more than that is caching behavior , inifrastructure state, compliance constraints and workloads patterns.
 
 
-```python
-from paddleocr import PaddleOCR
 
-# Model: PP-OCRv6_medium(Default)
-# Backend: Paddle Inference(Default)
-ocr = PaddleOCR(
-    use_doc_orientation_classify=False,
-    use_doc_unwarping=False,
-    use_textline_orientation=False,
-    enable_mkldnn=False,  #change this or you can try downgrading paddlepaddle==3.2.2 or adjust runtime configurations.
-
-)
-result = ocr.predict("https://paddle-model-ecology.bj.bcebos.com/paddlex/imgs/demo_image/general_ocr_002.png")
-
-for res in result:
-    res.print()
-    res.save_to_img("output")
-    res.save_to_json("output")
-
-```
-The best AI systems will increasingly be specialized, not general-purpose. The authors argue this isn't just an engineering choice—it is a consequence of mathematics, biology, economics, and machine learning all reaching the same conclusion. [read here](https://huggingface.co/blog/Dharma-AI/why-specialization-is-inevitable)
+### thehackernews 
+> TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development [read](https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html)
+tuxbot a botnet shows signs of being developed with assistance from LLM. the generated code used in tuxbot include safety disclaimer that the developer failed to remove before shipping. Although the LLM clearly aided in constructing the botnet serveral functions in the analyzed samples failed to work correctly. the cybersecurity company said a manual code review would have resolved these errors and that its possible more polished interations of the malware exissts out there in the wild
 
 
-### the hacker news 
-
-![Preview Image](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitE4uRkPKzQw_uUTSEzPgbuTByOaSNQeEHcANQCdYOtD8HJxqjIy9e0TIkkYeMN5QQghbvb1Nc4RJdwpGUD4ttQ8FqBpDAIMBe5Biw4zXIF-iYgl-vZPCGL1b5VNZpajQ8_cCPj7jx0DFABYuXLpyHYUSOe3jBKPsSej0y7TxrIHZwG_4m56TrDdTS9Ap1/s1700-e365/Anthropic-claude.jpg)
-
-The AI company said it received an order at 5:21 p.m. ET, instructing it to suspend all access to the models by foreign nationals. It said that it believed there was a "misunderstanding" and that it is working to restore access to the models as soon as possible. Access to other models will not be affected by the export control directive.
-
-Allows run code without authentication
-Splunk Enterprise 10.0.0 to 10.0.6 - Fixed in 10.0.7
-Splunk Enterprise 10.2.0 to 10.2.3 - Fixed in 10.2.4
-Splunk Enterprise 10.4 - Not affected
-
-![Preview](https://the-decoder.com/wp-content/uploads/2026/06/frontier_math_fable5.png)
-
-iPhone XS, XS Max, and XR; the iPhone 11, 11 Pro, 11 Pro Max; the iPhone SE (2nd generation); the iPad Air 3rd gen, iPad mini 5th gen, and iPad 8th gen; Apple Watch Series 4 and 5 not safe. [here](https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html?m=1)
-
-
-### opendosm
-[Index of Wholesaild and Retail Trade](https://open.dosm.gov.my/publications/iowrt_2026-04)
 
 ### kaggle
-Dark Hex? [link](https://www.kaggle.com/blog/dark-hex-game-arena#3468646)
-* A variant of the board game Hex
-* Two AI agents compete to connect opposite sides of a board
-* Key twist: fog of war (imperfect information)
-* You cannot see your opponent’s moves
-* You only discover them if you try placing a piece there
-* This turns it from a simple strategy game into a test of:
- * reasoning under uncertainty
- * opponent modeling
- * exploration vs exploitation
+> QSAR biodegradation Data Set [read](https://www.kaggle.com/datasets/muhammetvarl/qsarbiodegradation)
+biodegration is the natural process where microorganism break down complex organic materials into simple substances. Data set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).
 
-Here are data for retina related diseases
-[kaggle](https://www.kaggle.com/datasets/juanschafle/dna-methylation-data-epigenetic-biomarkers/data)
 
-This dataset contains JSON replays of completed episodes from a Kaggle simulations competition. Replays are selected daily, ranked by average agent rating, and capped at 20 GiB per day. See manifest.csv for the list of included episodes and their scores.
-
-[kaggle](https://www.kaggle.com/datasets/kaggle/pokemon-tcg-ai-battle-episodes-2026-06-29/data)
 
 ### arxiv
 
@@ -103,14 +48,12 @@ Scale. Speed. Trust: Three Imperatives for the AI Era
 The AI era is not just about smarter models — it requires a complete redesign of networking, security, and operations. Companies that modernize infrastructure will lead the next wave of innovation.
 https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 
-### thread
 
-![Preview](https://instagram.fkul2-3.fna.fbcdn.net/v/t51.82787-15/724243012_17894203086515858_7283832536159265742_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzkxODU3MTU4NTA5NDY0Njk1OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTE3OC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=wnxak-nZW-sQ7kNvwG8Fp8V&_nc_oc=AdrEDVOQ2pT16n4oaKLExl0VBeNuLrlwRPe3PGOgfr4EYaZcbYJrZvsY-FJzSSD07MR1TOC5KO8b9aPO0_KY3wO2&_nc_ad=z-m&_nc_cid=1220&_nc_zt=23&_nc_ht=instagram.fkul2-3.fna&_nc_gid=r6ONFmdymYFvndzkxpQ3vQ&_nc_ss=7a22e&oh=00_Af9f23VNP8isrzkYqjsT_CerZKH1_v8-lS7dIDpkBerWhA&oe=6A33F54E)
----
-
-
-### random
+### git, docker, uv
 > you can zip your commit [git archive](https://git-scm.com/docs/git-archive)
+> you can check your config [git config](https://git-scm.com/docs/git-config) and unset your typo config for example git config --unset --global user.emal
+
+> you can view resource usage with `docker container stats`
 
 
-![7-day heatmap](assets/heatmap.svg)
+> you can keep ur auth using `uv auth login google.com` and check the contents here `Get-Content "$env:APPDATA\uv\credentials\credentials.toml"`
