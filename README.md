@@ -31,6 +31,8 @@ routing is not about choosing model its about optimizing sistem. choosing model 
 > TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development [read](https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html)
 tuxbot a botnet shows signs of being developed with assistance from LLM. the generated code used in tuxbot include safety disclaimer that the developer failed to remove before shipping. Although the LLM clearly aided in constructing the botnet serveral functions in the analyzed samples failed to work correctly. the cybersecurity company said a manual code review would have resolved these errors and that its possible more polished interations of the malware exissts out there in the wild
 
+> north korea uses SVG and embed virus in it as a payload in job advertisement to steal crypto [read](https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html)
+
 
 
 ### kaggle
