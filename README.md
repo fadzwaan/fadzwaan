@@ -4,7 +4,7 @@
 > Live data sourced from [OpenDOSM](https://open.dosm.gov.my/) — Malaysia's official open statistics platform by the Department of Statistics Malaysia.
 
 | Indicator | Value | Period | Value| Period |
-|---|---|---|
+|---|---|---|---|---|
 | 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.2 mil** | 1Q 2026 | | |
 | 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **5.4%** | 1Q 2026 | | |
 | 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Apr 2026 | Increase Since Apr | |
