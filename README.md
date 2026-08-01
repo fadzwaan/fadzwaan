@@ -25,7 +25,7 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 > Model Routing is Simple . Until It Isn't [read](https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt)
 routing is not about choosing model its about optimizing sistem. choosing model are one variable , more than that is caching behavior , inifrastructure state, compliance constraints and workloads patterns.
 >  two new encoder models on Hugging Face: LFM2.5-Encoder-230M and LFM2.5-Encoder-350M. [here](https://huggingface.co/blog/LiquidAI/lfm2-5-encoders)
-
+> managing GPU is like managing aviation [here](https://huggingface.co/blog/Dharma-AI/gpu-management]
 
 
 ### thehackernews 
