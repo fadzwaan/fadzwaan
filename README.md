@@ -34,6 +34,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 
 > north korea uses SVG and embed virus in it as a payload in job advertisement to steal crypto [read](https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html)
 > openai goes to JFROG and then found a cred and its way to huggingface [read](https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html)
+> this further backed fatwa on bitcoin being haram, cause as simple as coldcard wallet can lead to bitcoin being stolen [read](https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html)
 
 
 
@@ -41,6 +42,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > QSAR biodegradation Data Set [read](https://www.kaggle.com/datasets/muhammetvarl/qsarbiodegradation)
 biodegration is the natural process where microorganism break down complex organic materials into simple substances. Data set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).
 > This dataset contains JSON replays of completed episodes from a Kaggle simulations competition. Replays are selected daily, ranked by average agent rating, and capped at 20 GiB per day. See manifest.csv for the list of included episodes and their scores. [read](https://www.kaggle.com/datasets/kaggle/pokemon-tcg-ai-battle-episodes-2026-07-26)
+>  This dataset simulates transactions from a digital wallet platform similar to popular services like PayTm in India or Khalti in Nepal. It contains 5000 synthetic records of various financial transactions across multiple categories, providing a rich source for analysis of digital payment behaviors and trends.[read](https://www.kaggle.com/datasets/harunrai/digital-wallet-transactions/data)
 
 
 
@@ -57,6 +59,7 @@ Scale. Speed. Trust: Three Imperatives for the AI Era
 The AI era is not just about smarter models — it requires a complete redesign of networking, security, and operations. Companies that modernize infrastructure will lead the next wave of innovation.
 https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > 80% of environment impact come during design phase , [read](https://blogs.cisco.com/our-corporate-purpose/sustainability-101-materials-at-the-center-of-sustainability-human-rights-and-business-resilience)
+> uh stop micromanage your people eh your hardware, [read](https://blogs.cisco.com/networking/wireless-isnt-magic-its-just-better-when-you-stop-micromanaging-your-network)
 
 
 ### git, docker, uv
