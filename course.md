@@ -1,5 +1,5 @@
 ## alison
-> https://alison.com/topic/learn/133086/managing-space-requirements-and-space-planning 50%
+> https://alison.com/topic/learn/133087/managing-workplace-services 50% stop at building management system
 > https://alison.com/topic/learn/150958/confined-space-entry-program 25%
 > https://alison.com/topic/learn/75826/defining-alzheimer-s-disease 33%
 > https://alison.com/topic/learn/160807/dna-microarray-tenchology-basic-concepts-and-workflows#google_vignette 40%
