@@ -7,13 +7,13 @@
 | Indicator | Value | Period | Value| Period |
 |---|---|---|---|---|
 | 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.2 mil** | 1Q 2026 | 34.4 mil | 2Q 2026 |
-| 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **5.4%** | 1Q 2026 | 5.4% | 1Q 2026 |
-| 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Apr 2026 | 3.0% | May 2026|
-| 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **2.0%** | May 2026 | 1.9% | Jun 2026 |
+| 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **6.0%** | 2Q 2026 | 5.4% | 1Q 2026 |
+| 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Jun 2026 | 3.0% | May 2026|
+| 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **1.8%** | July 2026 | 1.9% | Jun 2026 |
 | 🏭 [Production Costs](https://open.dosm.gov.my/dashboard/producer-prices) | **+7.8%** | May 2026 | **9.2** | Jun 2026 |  
-| 🔧 [Manufacturing Output](https://open.dosm.gov.my/dashboard/manufacturing-statistics) | **+9.1%** | Apr 2026 | **+8.9%** | May 2026 |
+| 🔧 [Manufacturing Output](https://open.dosm.gov.my/dashboard/manufacturing-statistics) | **9.8%** | June 2026 | **+8.9%** | May 2026 |
 | ⚙️ [Industrial Production](https://open.dosm.gov.my/dashboard/industrial-production) | **+8.2%** | Apr 2026 | **+8.4%** | May 2026 |
-| 🛍️ [Wholesale & Retail Trade](https://open.dosm.gov.my/dashboard/wholesale-retail-trade) | **+6.2%** | Apr 2026 | **3.1** | May 2026 | 
+| 🛍️ [Wholesale & Retail Trade](https://open.dosm.gov.my/dashboard/wholesale-retail-trade) | **5.1%** | Jun 2026 | **3.1** | May 2026 | 
 
 ---
 
