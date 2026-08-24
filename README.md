@@ -1,5 +1,7 @@
 ## Tools
 [threadsloom](https://threadloom-fp43fo6sk-fadzwans-projects.vercel.app)
+[llm-dashboard](https://chat.z.ai/space/m12517h25qh1-art)
+
 ## 🇲🇾 Malaysia at a Glance
 
 > Live data sourced from [OpenDOSM](https://open.dosm.gov.my/) — Malaysia's official open statistics platform by the Department of Statistics Malaysia.
