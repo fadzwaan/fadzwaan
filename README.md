@@ -1,6 +1,7 @@
 ## Tools
 [threadsloom](https://threadloom-fp43fo6sk-fadzwans-projects.vercel.app)
 [llm-dashboard](https://chat.z.ai/space/m12517h25qh1-art)
+[.](https://aistudio.google.com/apps/4b43561a-934d-4d6c-bcd8-40b6ce32f688?project=gen-lang-client-0160584809&showAssistant=true&showPreview=true)
 
 ## 🇲🇾 Malaysia at a Glance
 
