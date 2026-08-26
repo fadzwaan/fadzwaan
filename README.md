@@ -33,6 +33,207 @@ routing is not about choosing model its about optimizing sistem. choosing model 
 
 > this is cool but  i just notice there are multiple type of benchmark here [read](https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b)
 
+Absolutely. And since you specifically wanted to **learn through the reading rather than have me just dump a summary**, I'll conclude based on what *we actually covered*.
+
+## What you learned today
+
+The article is basically teaching you how to build a **multi-vector retrieval model** using Sentence Transformers.
+
+The biggest idea we encountered is:
+
+> **Don't treat model training as "give AI data and let it learn." There are several pieces that have to fit together.**
+
+We identified:
+
+```text
+Model
+Dataset
+Loss Function
+Training Arguments
+Evaluator
+Trainer
+```
+
+And we went through the first two in quite a bit of detail.
+
+### 1. There are two main ways to start
+
+You can:
+
+**A. Fine-tune an existing multi-vector model**
+
+```text
+Existing multi-vector model
+          ↓
+       Your data
+          ↓
+      Fine-tuning
+```
+
+or:
+
+**B. Start with a strong Transformer**
+
+```text
+Pretrained Transformer
+          ↓
+Add new projection
+          ↓
+Train it for retrieval
+```
+
+And surprisingly, **the model that already performs best isn't necessarily the best model to fine-tune**.
+
+The author's experiment showed that a pre-supervised/unsupervised checkpoint could adapt to a specialized domain better than a finished general-retrieval model.
+
+That's a really important ML lesson:
+
+> **Best starting model ≠ model with the highest current benchmark score.**
+
+---
+
+### 2. You don't need to blindly copy an architecture
+
+We saw the pipeline:
+
+```text
+Text
+ ↓
+Transformer
+ ↓
+token representations
+ ↓
+Dense projection
+ ↓
+MultiVectorMask
+ ↓
+Normalize
+ ↓
+token vectors
+```
+
+Instead of treating the architecture as sacred, the author tested individual choices.
+
+For example, punctuation can be placed in a **skiplist** because punctuation usually isn't useful for retrieval.
+
+And the author measured the effect instead of assuming it helped.
+
+That's the mindset I really want you to take away:
+
+> **Change something because you have a reason, then measure whether it actually helped.**
+
+---
+
+### 3. Multi-vector means we're not necessarily making ONE vector
+
+This was probably the most fundamental technical concept.
+
+A traditional embedding approach might look like:
+
+```text
+"The patient has pneumonia"
+              ↓
+        ONE vector
+```
+
+A multi-vector approach is more like:
+
+```text
+"The"       → vector
+"patient"   → vector
+"has"       → vector
+"pneumonia" → vector
+```
+
+So the model preserves information at the **token level**.
+
+That enables a different kind of retrieval/scoring approach — the **late-interaction / ColBERT-style** approach we're going to encounter more deeply later in the article.
+
+---
+
+### 4. Your data is extremely important
+
+We then moved into datasets.
+
+The author's example essentially boils down to:
+
+```text
+QUESTION                  RELEVANT PASSAGE
+────────────────────────────────────────────
+"What causes X?"     →    "Passage explaining X"
+"What treats Y?"     →    "Passage explaining Y"
+```
+
+Those simple:
+
+> **query → relevant document**
+
+pairs can be enough to train the retrieval system.
+
+And your data doesn't have to come from Hugging Face.
+
+It can start as:
+
+```text
+CSV
+JSON
+Parquet
+SQL
+etc.
+```
+
+and eventually become a Hugging Face `Dataset`.
+
+---
+
+## And probably the most important thing from where we stopped
+
+We ended on:
+
+> **Your dataset format needs to match your loss function.**
+
+This is a concept I want you to keep.
+
+Don't think:
+
+> "I have data, therefore I can train."
+
+Think:
+
+```text
+What data do I have?
+        ↓
+What does my loss function expect?
+        ↓
+Do they match?
+        ↓
+YES → train
+NO  → change the data or loss
+```
+
+That's the beginning of actually **understanding machine learning pipelines**, rather than just using an AI framework.
+
+---
+
+### And honestly...
+
+I think the way you approached this reading was good.
+
+You didn't try to finish the blog as quickly as possible. You kept stopping at:
+
+> "Wait, what does this mean?"
+
+and then we dug into the concept.
+
+That's much more valuable than reading 20 pages and saying:
+
+> "Yeah, I kinda understand it."
+
+You stopped **before the loss-function details**, which is actually a natural stopping point.
+
+Next time, we can simply continue from **Dataset Format** without restarting anything.
+
+
 ### thehackernews 
 > TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development [read](https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html)
 tuxbot a botnet shows signs of being developed with assistance from LLM. the generated code used in tuxbot include safety disclaimer that the developer failed to remove before shipping. Although the LLM clearly aided in constructing the botnet serveral functions in the analyzed samples failed to work correctly. the cybersecurity company said a manual code review would have resolved these errors and that its possible more polished interations of the malware exissts out there in the wild
