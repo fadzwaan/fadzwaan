@@ -244,6 +244,8 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 >
 
 > just dont use Rovo anymore [read](https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html)
+> dont silent patch on network-wide fund-loss vulnerability
+[read](https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html)[ai](https://chatgpt.com/share/6a927706-e800-83ec-983b-ab2e2f9b99fb)
 
 
 
