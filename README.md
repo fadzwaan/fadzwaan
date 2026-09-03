@@ -246,6 +246,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > just dont use Rovo anymore [read](https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html)
 > dont silent patch on network-wide fund-loss vulnerability
 [read](https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html)[ai](https://chatgpt.com/share/6a927706-e800-83ec-983b-ab2e2f9b99fb)
+> Google make Fairwind program to distribute Gemini 3.8 Flash Cyber [here](https://chatgpt.com/c/6a98b9c1-aa00-83ec-b805-d0717a3096d6)
 
 
 
@@ -274,6 +275,9 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > I have been closely associated w/ IB  vs Ethernet since early VMware days. While the appeal of low latency aspect of IB is there, Ethernet has always gotten better overtime, and better at solving problems at scale. Especially with concepts around MRC, etc, it can show some real power.  IB keeps introducing things that existing protocols have solved for many years. I am not anti-IB or any, just stating the simpification that ethernet offers. Having said, I haven't been looking at this space in recent times, so more to learn. [read](https://blogs.cisco.com/datacenter/scaling-the-future-why-ethernet-is-the-backbone-of-ai-supercomputing)
 
 
+### science daily
+> sitting for 8 hours without interuption can cause cancer [here](https://www.sciencedaily.com/releases/2026/09/260901070548.htm)
+> broken heart syndrome more highlikely to postmonopause women [here](https://www.sciencedaily.com/releases/2026/09/260901070518.htm)
 
 
 ### git, docker, uv
