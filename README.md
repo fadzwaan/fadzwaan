@@ -9,10 +9,10 @@
 
 | Indicator | Value | Period | Value| Period |
 |---|---|---|---|---|
-| 👥 [Current Population](https://open.dosm.gov.my/dashboard/population) | **34.2 mil** | 1Q 2026 | 34.4 mil | 2Q 2026 |
-| 📈 [Economic Growth](https://open.dosm.gov.my/dashboard/gdp) | **6.0%** | 2Q 2026 | 5.4% | 1Q 2026 |
-| 💼 [Unemployment](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Jun 2026 | 3.0% | May 2026|
-| 🛒 [Inflation](https://open.dosm.gov.my/dashboard/consumer-prices) | **1.8%** | July 2026 | 1.9% | Jun 2026 |
+| 👥 [Population](https://open.dosm.gov.my/dashboard/population) | **34.2 mil** | 1Q 2026 | 34.4 mil | 2Q 2026 |
+| 📈 [Economic Growth/GDP](https://open.dosm.gov.my/dashboard/gdp) | **6.0%** | 2Q 2026 | 5.4% | 1Q 2026 |
+| 💼 [Unemployment/Labour Market](https://open.dosm.gov.my/dashboard/labour-market) | **3.0%** | Jun 2026 | 3.0% | May 2026|
+| 🛒 [Inflation/Consumer Prices](https://open.dosm.gov.my/dashboard/consumer-prices) | **1.8%** | July 2026 | 1.9% | Jun 2026 |
 | 🏭 [Production Costs](https://open.dosm.gov.my/dashboard/producer-prices) | **+7.8%** | May 2026 | **9.2** | Jun 2026 |  
 | 🔧 [Manufacturing Output](https://open.dosm.gov.my/dashboard/manufacturing-statistics) | **9.8%** | June 2026 | **+8.9%** | May 2026 |
 | ⚙️ [Industrial Production](https://open.dosm.gov.my/dashboard/industrial-production) | **+8.2%** | Apr 2026 | **+8.4%** | May 2026 |
@@ -20,7 +20,7 @@
 
 ---
 
-## 📚 Worth Reading
+## Worth Reading
 
 Interesting articles, papers, visualizations, and technical deep dives that I found valuable. Each entry includes a short personal takeaway or review.
 
@@ -30,219 +30,16 @@ Interesting articles, papers, visualizations, and technical deep dives that I fo
 routing is not about choosing model its about optimizing sistem. choosing model are one variable , more than that is caching behavior , inifrastructure state, compliance constraints and workloads patterns.
 >  two new encoder models on Hugging Face: LFM2.5-Encoder-230M and LFM2.5-Encoder-350M. [here](https://huggingface.co/blog/LiquidAI/lfm2-5-encoders)
 > managing GPU is like managing aviation [here](https://huggingface.co/blog/Dharma-AI/gpu-management]
-
 > this is cool but  i just notice there are multiple type of benchmark here [read](https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b)
-
-Absolutely. And since you specifically wanted to **learn through the reading rather than have me just dump a summary**, I'll conclude based on what *we actually covered*.
-
-## What you learned today
-
-The article is basically teaching you how to build a **multi-vector retrieval model** using Sentence Transformers.
-
-The biggest idea we encountered is:
-
-> **Don't treat model training as "give AI data and let it learn." There are several pieces that have to fit together.**
-
-We identified:
-
-```text
-Model
-Dataset
-Loss Function
-Training Arguments
-Evaluator
-Trainer
-```
-
-And we went through the first two in quite a bit of detail.
-
-### 1. There are two main ways to start
-
-You can:
-
-**A. Fine-tune an existing multi-vector model**
-
-```text
-Existing multi-vector model
-          ↓
-       Your data
-          ↓
-      Fine-tuning
-```
-
-or:
-
-**B. Start with a strong Transformer**
-
-```text
-Pretrained Transformer
-          ↓
-Add new projection
-          ↓
-Train it for retrieval
-```
-
-And surprisingly, **the model that already performs best isn't necessarily the best model to fine-tune**.
-
-The author's experiment showed that a pre-supervised/unsupervised checkpoint could adapt to a specialized domain better than a finished general-retrieval model.
-
-That's a really important ML lesson:
-
-> **Best starting model ≠ model with the highest current benchmark score.**
-
----
-
-### 2. You don't need to blindly copy an architecture
-
-We saw the pipeline:
-
-```text
-Text
- ↓
-Transformer
- ↓
-token representations
- ↓
-Dense projection
- ↓
-MultiVectorMask
- ↓
-Normalize
- ↓
-token vectors
-```
-
-Instead of treating the architecture as sacred, the author tested individual choices.
-
-For example, punctuation can be placed in a **skiplist** because punctuation usually isn't useful for retrieval.
-
-And the author measured the effect instead of assuming it helped.
-
-That's the mindset I really want you to take away:
-
-> **Change something because you have a reason, then measure whether it actually helped.**
-
----
-
-### 3. Multi-vector means we're not necessarily making ONE vector
-
-This was probably the most fundamental technical concept.
-
-A traditional embedding approach might look like:
-
-```text
-"The patient has pneumonia"
-              ↓
-        ONE vector
-```
-
-A multi-vector approach is more like:
-
-```text
-"The"       → vector
-"patient"   → vector
-"has"       → vector
-"pneumonia" → vector
-```
-
-So the model preserves information at the **token level**.
-
-That enables a different kind of retrieval/scoring approach — the **late-interaction / ColBERT-style** approach we're going to encounter more deeply later in the article.
-
----
-
-### 4. Your data is extremely important
-
-We then moved into datasets.
-
-The author's example essentially boils down to:
-
-```text
-QUESTION                  RELEVANT PASSAGE
-────────────────────────────────────────────
-"What causes X?"     →    "Passage explaining X"
-"What treats Y?"     →    "Passage explaining Y"
-```
-
-Those simple:
-
-> **query → relevant document**
-
-pairs can be enough to train the retrieval system.
-
-And your data doesn't have to come from Hugging Face.
-
-It can start as:
-
-```text
-CSV
-JSON
-Parquet
-SQL
-etc.
-```
-
-and eventually become a Hugging Face `Dataset`.
-
----
-
-## And probably the most important thing from where we stopped
-
-We ended on:
-
-> **Your dataset format needs to match your loss function.**
-
-This is a concept I want you to keep.
-
-Don't think:
-
-> "I have data, therefore I can train."
-
-Think:
-
-```text
-What data do I have?
-        ↓
-What does my loss function expect?
-        ↓
-Do they match?
-        ↓
-YES → train
-NO  → change the data or loss
-```
-
-That's the beginning of actually **understanding machine learning pipelines**, rather than just using an AI framework.
-
----
-
-### And honestly...
-
-I think the way you approached this reading was good.
-
-You didn't try to finish the blog as quickly as possible. You kept stopping at:
-
-> "Wait, what does this mean?"
-
-and then we dug into the concept.
-
-That's much more valuable than reading 20 pages and saying:
-
-> "Yeah, I kinda understand it."
-
-You stopped **before the loss-function details**, which is actually a natural stopping point.
-
-Next time, we can simply continue from **Dataset Format** without restarting anything.
+> With funes added, recall happens inside the conversation. The agent reaches for its memory on its own and names the session behind its answer. [read](https://huggingface.co/blog/funes)
 
 
 ### thehackernews 
 > TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development [read](https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html)
 tuxbot a botnet shows signs of being developed with assistance from LLM. the generated code used in tuxbot include safety disclaimer that the developer failed to remove before shipping. Although the LLM clearly aided in constructing the botnet serveral functions in the analyzed samples failed to work correctly. the cybersecurity company said a manual code review would have resolved these errors and that its possible more polished interations of the malware exissts out there in the wild
-
 > north korea uses SVG and embed virus in it as a payload in job advertisement to steal crypto [read](https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html)
 > openai goes to JFROG and then found a cred and its way to huggingface [read](https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html)
 > this further backed fatwa on bitcoin being haram, cause as simple as coldcard wallet can lead to bitcoin being stolen [read](https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html)
->
-
 > just dont use Rovo anymore [read](https://thehackernews.com/2026/08/atlassian-rovo-can-be-tricked-into.html)
 > dont silent patch on network-wide fund-loss vulnerability
 [read](https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html)[ai](https://chatgpt.com/share/6a927706-e800-83ec-983b-ab2e2f9b99fb)
@@ -255,9 +52,6 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 biodegration is the natural process where microorganism break down complex organic materials into simple substances. Data set containing values for 41 attributes (molecular descriptors) used to classify 1055 chemicals into 2 classes (ready and not ready biodegradable).
 > This dataset contains JSON replays of completed episodes from a Kaggle simulations competition. Replays are selected daily, ranked by average agent rating, and capped at 20 GiB per day. See manifest.csv for the list of included episodes and their scores. [read](https://www.kaggle.com/datasets/kaggle/pokemon-tcg-ai-battle-episodes-2026-07-26)
 >  This dataset simulates transactions from a digital wallet platform similar to popular services like PayTm in India or Khalti in Nepal. It contains 5000 synthetic records of various financial transactions across multiple categories, providing a rich source for analysis of digital payment behaviors and trends.[read](https://www.kaggle.com/datasets/harunrai/digital-wallet-transactions/data)
-
-
-
 
 
 ### arxiv
@@ -276,8 +70,13 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 
 
 ### science daily
-> sitting for 8 hours without interuption can cause cancer [here](https://www.sciencedaily.com/releases/2026/09/260901070548.htm)
-> broken heart syndrome more highlikely to postmonopause women [here](https://www.sciencedaily.com/releases/2026/09/260901070518.htm)
+> sitting for 8 hours without interuption can cause cancer [here](https://www.sciencedaily.com/releases/2026/09/260901070548.htm)  | 
+> broken heart syndrome more highlikely to postmonopause women [here](https://www.sciencedaily.com/releases/2026/09/260901070518.htm) | 
+> Stroke damages tissue → a cavity remains → researchers place a porous scaffold there → cells can enter the scaffold → the scaffold helps organize the repair process.[here](https://www.sciencedaily.com/releases/2026/09/260902234512.htm) [ai](https://chatgpt.com/c/6a9a4fb5-bcf4-83ec-98aa-9b123b380674) | 
+
+## nvidia blog
+> nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
+> nvidia plan to make faster local model solutions for Hermes Agent, OpenClaw and Perplexity, since local modal is slow [here](https://blogs.nvidia.com/blog/local-ai-ifa-next-gen-agents-nv-pair-rtx-spark/) | 
 
 
 ### git, docker, uv
@@ -322,3 +121,9 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 > you can keep your auth using `uv auth login google.com` and check the contents here `Get-Content "$env:APPDATA\uv\credentials\credentials.toml"`
 > uv tree displays your project's dependency tree
 > uv cheatlist , [read](https://mathspp.com/blog/uv-cheatsheet)
+>
+
+## TODAY (4/9)
+>  4 September 2021 2021 Nigerian government announces it is suspending Twitter indefinitely after removing a post by President Muhammadu Buhari [here](https://www.onthisday.com/today/events.php)
+> Putrajaya Presint 2 64 [here](https://eqms.doe.gov.my/APIMS/main)
+> Hujan after Solat jumaat [here](https://eqms.doe.gov.my/APIMS/main)
