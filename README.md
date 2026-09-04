@@ -124,6 +124,6 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 >
 
 ## TODAY (4/9)
->  4 September 2021 2021 Nigerian government announces it is suspending Twitter indefinitely after removing a post by President Muhammadu Buhari [here](https://www.onthisday.com/today/events.php)
-> Putrajaya Presint 2 64 [here](https://eqms.doe.gov.my/APIMS/main)
-> Hujan after Solat jumaat [here](https://eqms.doe.gov.my/APIMS/main)
+>  5 September 2021 President Xi Jinping hosts a China-Africa summit with 50 African delegates focusing on developing green energy  [here](https://www.onthisday.com/today/events.php)
+> Nilai, NEGERI SEMBILAN 90 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
+> Haze All Day [here](https://www.met.gov.my/en/forecast/weather/district/)
