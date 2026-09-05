@@ -44,6 +44,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > dont silent patch on network-wide fund-loss vulnerability
 [read](https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html)[ai](https://chatgpt.com/share/6a927706-e800-83ec-983b-ab2e2f9b99fb)
 > Google make Fairwind program to distribute Gemini 3.8 Flash Cyber [here](https://chatgpt.com/c/6a98b9c1-aa00-83ec-b805-d0717a3096d6)
+> ASCII Smuggling (ASCII Smuggling. The basic idea is that certain Unicode characters do not visibly appear on the screen, but computers and AI systems can still process them. )using Unicode Tags block (U+E0000–U+E007F), So Microsoft make a phishing campaign [here](https://chatgpt.com/c/6a9b6a70-9100-83ec-a3a1-4700c30a5b98)
 
 
 
@@ -67,6 +68,7 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > 80% of environment impact come during design phase , [read](https://blogs.cisco.com/our-corporate-purpose/sustainability-101-materials-at-the-center-of-sustainability-human-rights-and-business-resilience)
 > uh stop micromanage your people eh your hardware, [read](https://blogs.cisco.com/networking/wireless-isnt-magic-its-just-better-when-you-stop-micromanaging-your-network)
 > I have been closely associated w/ IB  vs Ethernet since early VMware days. While the appeal of low latency aspect of IB is there, Ethernet has always gotten better overtime, and better at solving problems at scale. Especially with concepts around MRC, etc, it can show some real power.  IB keeps introducing things that existing protocols have solved for many years. I am not anti-IB or any, just stating the simpification that ethernet offers. Having said, I haven't been looking at this space in recent times, so more to learn. [read](https://blogs.cisco.com/datacenter/scaling-the-future-why-ethernet-is-the-backbone-of-ai-supercomputing)
+> Expand Cisco Secure AI Factory new rack scale and high-density compute options, including support for NVIDIA Vera Rubin NVL72 and NVIDIA HGX Rubin NVL8 [here](https://blogs.cisco.com/news/new-cisco-secure-ai-factory-with-nvidia-built-for-rack-scale-era)
 
 
 ### science daily
@@ -98,24 +100,33 @@ RUN apt install git
 The more stuff you put inside the runtime image, the larger the attack surface becomes.
 
 Docker's hardened images intentionally remove things such as shells, package managers, compilers and debugging tools from production variants. Thats why multi stage deployments is important
+```mermaid
+flowchart TD
+    subgraph BUILD["BUILD IMAGE"]
+        B1["Compiler"]
+        B2["pip"]
+        B3["Build Dependencies"]
+        B4["Development Tools"]
 
-BUILD IMAGE
-    │
-    ├── compiler
-    ├── pip
-    ├── build dependencies
-    └── development tools
-             │
-             ▼
-       application
-             │
-             ▼
-RUNTIME IMAGE
-    │
-    ├── application
-    ├── required libraries
-    └── nothing unnecessary
+        B1 --> APP["Application"]
+        B2 --> APP
+        B3 --> APP
+        B4 --> APP
+    end
 
+    APP --> RUNTIME
+
+    subgraph RUNTIME["RUNTIME IMAGE"]
+        R1["Application"]
+        R2["Required Libraries"]
+        R3["Nothing Unnecessary"]
+    end
+
+    RUNTIME:::runtime
+
+    classDef runtime fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+
+```
 docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 
 
@@ -124,7 +135,7 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 > uv cheatlist , [read](https://mathspp.com/blog/uv-cheatsheet)
 >
 
-## TODAY (4/9)
+## TODAY (5/9)
 >  5 September 2021 President Xi Jinping hosts a China-Africa summit with 50 African delegates focusing on developing green energy  [here](https://www.onthisday.com/today/events.php)
 > Nilai, NEGERI SEMBILAN 90 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
 > Haze All Day [here](https://www.met.gov.my/en/forecast/weather/district/)
