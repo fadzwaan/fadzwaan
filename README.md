@@ -46,6 +46,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > Google make Fairwind program to distribute Gemini 3.8 Flash Cyber [here](https://chatgpt.com/c/6a98b9c1-aa00-83ec-b805-d0717a3096d6)
 > ASCII Smuggling (ASCII Smuggling. The basic idea is that certain Unicode characters do not visibly appear on the screen, but computers and AI systems can still process them. )using Unicode Tags block (U+E0000–U+E007F), So Microsoft make a phishing campaign [here](https://chatgpt.com/c/6a9b6a70-9100-83ec-a3a1-4700c30a5b98)
 > Don't expose MikroTik's management interface directly to the internet unless absolutely necessary. Keep RouterOS patched and restrict administrative access to trusted networks/VPNs. [here](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)
+>Social engineering/phishing → rogue ScreenConnect → 4-stage VBScript → reconnaissance → payload selection → persistence/backdoor → ScreenConnect-based propagation[here](https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html?m=1) [ai](https://chatgpt.com/share/6a9eb60b-d6e8-83ec-957b-58d9cdcbfc16?ogimg=plain]
 
 
 
