@@ -79,6 +79,7 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > not yet evidence that plasmalogens reverse aging in humans [here](https://chatgpt.com/share/6a9b69ae-2030-83ec-be03-77f760ba1898?ogimg=plain)
 > microbiome kat perut laju berjangkit [here](
 https://www.sciencedaily.com/releases/2026/09/260906170129.htm)
+> AI predict ur relationship but with limitations [here](https://www.sciencedaily.com/releases/2026/09/260906170140.html)
 
 ## nvidia blog
 > nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
