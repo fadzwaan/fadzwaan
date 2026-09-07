@@ -45,6 +45,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 [read](https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html)[ai](https://chatgpt.com/share/6a927706-e800-83ec-983b-ab2e2f9b99fb)
 > Google make Fairwind program to distribute Gemini 3.8 Flash Cyber [here](https://chatgpt.com/c/6a98b9c1-aa00-83ec-b805-d0717a3096d6)
 > ASCII Smuggling (ASCII Smuggling. The basic idea is that certain Unicode characters do not visibly appear on the screen, but computers and AI systems can still process them. )using Unicode Tags block (U+E0000–U+E007F), So Microsoft make a phishing campaign [here](https://chatgpt.com/c/6a9b6a70-9100-83ec-a3a1-4700c30a5b98)
+> Don't expose MikroTik's management interface directly to the internet unless absolutely necessary. Keep RouterOS patched and restrict administrative access to trusted networks/VPNs. [here](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)
 
 
 
@@ -135,7 +136,7 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 > uv cheatlist , [read](https://mathspp.com/blog/uv-cheatsheet)
 >
 
-## TODAY (5/9)
->  5 September 2021 President Xi Jinping hosts a China-Africa summit with 50 African delegates focusing on developing green energy  [here](https://www.onthisday.com/today/events.php)
-> Nilai, NEGERI SEMBILAN 90 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
+## TODAY (7/9)
+>  7/9/1940 Beginning of the Blitz as the German Luftwaffe bombs London for the first of 57 consecutive nights, losing 41 bombers as the Nazis prepare to invade Britain   [here](https://www.onthisday.com/today/events.php)
+> Nilai, NEGERI SEMBILAN 166 Unhealthy [here](https://eqms.doe.gov.my/APIMS/main)
 > Haze All Day [here](https://www.met.gov.my/en/forecast/weather/district/)
