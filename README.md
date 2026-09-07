@@ -77,6 +77,8 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > broken heart syndrome more highlikely to postmonopause women [here](https://www.sciencedaily.com/releases/2026/09/260901070518.htm) | 
 > Stroke damages tissue → a cavity remains → researchers place a porous scaffold there → cells can enter the scaffold → the scaffold helps organize the repair process.[here](https://www.sciencedaily.com/releases/2026/09/260902234512.htm) [ai](https://chatgpt.com/c/6a9a4fb5-bcf4-83ec-98aa-9b123b380674) | 
 > not yet evidence that plasmalogens reverse aging in humans [here](https://chatgpt.com/share/6a9b69ae-2030-83ec-be03-77f760ba1898?ogimg=plain)
+> microbiome kat perut laju berjangkit [here](
+https://www.sciencedaily.com/releases/2026/09/260906170129.htm)
 
 ## nvidia blog
 > nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
