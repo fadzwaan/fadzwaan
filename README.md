@@ -142,7 +142,7 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 > uv cheatlist , [read](https://mathspp.com/blog/uv-cheatsheet)
 >
 
-## TODAY (7/9)
->  7/9/1940 Beginning of the Blitz as the German Luftwaffe bombs London for the first of 57 consecutive nights, losing 41 bombers as the Nazis prepare to invade Britain   [here](https://www.onthisday.com/today/events.php)
-> Nilai, NEGERI SEMBILAN 166 Unhealthy [here](https://eqms.doe.gov.my/APIMS/main)
-> Haze All Day [here](https://www.met.gov.my/en/forecast/weather/district/)
+## TODAY (11/9)
+>  11/9/2025 2025 Suspect in the assassination of US political activist Charlie Kirk surrenders at the urging of his father and a family clergyma   [here](https://www.onthisday.com/today/events.php)
+> Nilai, NEGERI SEMBILAN 75 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
+> Isolated Rain Morning Afternoon, Haze Night [here](https://www.met.gov.my/en/forecast/weather/district/)
