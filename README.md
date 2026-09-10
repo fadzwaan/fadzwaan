@@ -47,6 +47,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > ASCII Smuggling (ASCII Smuggling. The basic idea is that certain Unicode characters do not visibly appear on the screen, but computers and AI systems can still process them. )using Unicode Tags block (U+E0000–U+E007F), So Microsoft make a phishing campaign [here](https://chatgpt.com/c/6a9b6a70-9100-83ec-a3a1-4700c30a5b98)
 > Don't expose MikroTik's management interface directly to the internet unless absolutely necessary. Keep RouterOS patched and restrict administrative access to trusted networks/VPNs. [here](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)
 >Social engineering/phishing → rogue ScreenConnect → 4-stage VBScript → reconnaissance → payload selection → persistence/backdoor → ScreenConnect-based propagation[here](https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html?m=1) [ai](https://chatgpt.com/share/6a9eb60b-d6e8-83ec-957b-58d9cdcbfc16?ogimg=plain]
+> Abused Google Play Store early access to distribute [trojan](https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html)
 
 
 
@@ -81,6 +82,7 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > microbiome kat perut laju berjangkit [here](
 https://www.sciencedaily.com/releases/2026/09/260906170129.htm)
 > AI predict ur relationship but with limitations [here](https://www.sciencedaily.com/releases/2026/09/260906170140.html)
+> Using atomic force microscopy Scientist able to watch two DNA strands zipping together for the first time . DNA carries a negative electrical charge. Because objects with the same charge normally push away from each other, DNA molecules might be expected to repel one another. Yet inside living cells, DNA must sometimes come into close contact and recognize matching sequences [here](https://www.sciencedaily.com/releases/2026/09/260909231717.htm) 
 
 ## nvidia blog
 > nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
