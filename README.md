@@ -1,3 +1,5 @@
+!<-- refer here for markdown example https://gist.github.com/allysonsilva/85fff14a22bbdf55485be947566cc09e -->
+
 ## Tools
 [threadsloom](https://threadloom-fp43fo6sk-fadzwans-projects.vercel.app)
 [llm-dashboard](https://chat.z.ai/space/m12517h25qh1-art)
@@ -33,6 +35,10 @@ routing is not about choosing model its about optimizing sistem. choosing model 
 > this is cool but  i just notice there are multiple type of benchmark here [read](https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b)
 > With funes added, recall happens inside the conversation. The agent reaches for its memory on its own and names the session behind its answer. [read](https://huggingface.co/blog/funes)
 
+> AUTOMATIC1111 [here](https://huggingface.co/blog/gradio-workflow-1111)
+>> its a canvas , there is prompt matrix you can generate image and control its attriibute with multiple windows of slider
+>>> tommorrow stuff
+
 
 ### thehackernews 
 > TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development [read](https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html)
@@ -48,6 +54,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > Don't expose MikroTik's management interface directly to the internet unless absolutely necessary. Keep RouterOS patched and restrict administrative access to trusted networks/VPNs. [here](https://thehackernews.com/2026/09/attackers-hijack-mikrotik-routers.html)
 >Social engineering/phishing → rogue ScreenConnect → 4-stage VBScript → reconnaissance → payload selection → persistence/backdoor → ScreenConnect-based propagation[here](https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html?m=1) [ai](https://chatgpt.com/share/6a9eb60b-d6e8-83ec-957b-58d9cdcbfc16?ogimg=plain]
 > Abused Google Play Store early access to distribute [trojan](https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html)
+> Claude can check if u misused its model for a very serios attack , some of are already too late, but they manage to stop the thing in Yemen but there are numerous cases group already utilised claude for making virus or campaign [here](https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html)
 
 
 
@@ -82,7 +89,8 @@ https://blogs.cisco.com/news/accelerating-the-pace-of-innovation-for-the-ai-era
 > microbiome kat perut laju berjangkit [here](
 https://www.sciencedaily.com/releases/2026/09/260906170129.htm)
 > AI predict ur relationship but with limitations [here](https://www.sciencedaily.com/releases/2026/09/260906170140.html)
-> Using atomic force microscopy Scientist able to watch two DNA strands zipping together for the first time . DNA carries a negative electrical charge. Because objects with the same charge normally push away from each other, DNA molecules might be expected to repel one another. Yet inside living cells, DNA must sometimes come into close contact and recognize matching sequences [here](https://www.sciencedaily.com/releases/2026/09/260909231717.htm) 
+> Using atomic force microscopy Scientist able to watch two DNA strands zipping together for the first time . DNA carries a negative electrical charge. Because objects with the same charge normally push away from each other, DNA molecules might be expected to repel one another. Yet inside living cells, DNA must sometimes come into close contact and recognize matching sequences [here](https://www.sciencedaily.com/releases/2026/09/260909231717.htm)
+> cat poop help fight cancer [2014](https://www.sciencedaily.com/releases/2014/07/140715095515.htm)
 
 ## nvidia blog
 > nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
@@ -142,7 +150,41 @@ docker dhi is a Docker CLI for managing Docker Hardened Images (DHI).
 > uv cheatlist , [read](https://mathspp.com/blog/uv-cheatsheet)
 >
 
-## TODAY (11/9)
->  11/9/2025 2025 Suspect in the assassination of US political activist Charlie Kirk surrenders at the urging of his father and a family clergyma   [here](https://www.onthisday.com/today/events.php)
-> Nilai, NEGERI SEMBILAN 75 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
-> Isolated Rain Morning Afternoon, Haze Night [here](https://www.met.gov.my/en/forecast/weather/district/)
+## TODAY (12/9)
+>  12/9/2025 2025 More than 300 South Koreans detained by an immigration raid at a Hyundai plant in Georgia, United States, arrive home in South Korea, sparking national outrage over investing in the US  [here](https://www.onthisday.com/today/events.php)
+> Nilai, NEGERI SEMBILAN 70 Moderate [here](https://eqms.doe.gov.my/APIMS/main)
+> No rain at all , only cloudy in the morning [here](https://www.met.gov.my/en/forecast/weather/district/)
+
+## Local
+
+PS C:\Users\fadzw> $computer = Get-ComputerInfo
+PS C:\Users\fadzw>
+PS C:\Users\fadzw> [PSCustomObject]@{
+>>     Manufacturer = $computer.CsSystemManufacturer
+>>     Model        = $computer.CsSystemProductName
+>>     CPU          = ($computer.CsProcessors | Select-Object -First 1).Name
+>>     RAM_GB       = [math]::Round($computer.CsTotalPhysicalMemory / 1GB, 2)
+>>     OS           = $computer.WindowsProductName
+>>     OSVersion    = $computer.WindowsVersion
+>>     Build        = $computer.OsBuildNumber
+>> }
+
+
+Manufacturer :
+Model        :
+CPU          : AMD Ryzen 5 7535HS with Radeon Graphics
+RAM_GB       : 15.21
+OS           : Windows 10 Home Single Language
+OSVersion    : 2009
+Build        : 26200
+
+
+### ☁️ Cloud Platforms
+
+- **[Kaggle](https://www.kaggle.com/) — Free Tier**
+  - Hosted Jupyter Notebook environment
+  - 4 CPU cores
+  - 30 GB RAM
+  - Optional NVIDIA Tesla P100 / Tesla T4 GPU
+  - Free GPU and TPU usage subject to platform limits
+  - [Technical Specifications](https://www.kaggle.com/docs/notebooks#technical-specifications)
