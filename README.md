@@ -55,6 +55,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 >Social engineering/phishing → rogue ScreenConnect → 4-stage VBScript → reconnaissance → payload selection → persistence/backdoor → ScreenConnect-based propagation[here](https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html?m=1) [ai](https://chatgpt.com/share/6a9eb60b-d6e8-83ec-957b-58d9cdcbfc16?ogimg=plain]
 > Abused Google Play Store early access to distribute [trojan](https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html)
 > Claude can check if u misused its model for a very serios attack , some of are already too late, but they manage to stop the thing in Yemen but there are numerous cases group already utilised claude for making virus or campaign [here](https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html)
+> chrome risked with cleangulp with taking advantage of 2 CvE [here](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)
 
 
 
@@ -91,6 +92,7 @@ https://www.sciencedaily.com/releases/2026/09/260906170129.htm)
 > AI predict ur relationship but with limitations [here](https://www.sciencedaily.com/releases/2026/09/260906170140.html)
 > Using atomic force microscopy Scientist able to watch two DNA strands zipping together for the first time . DNA carries a negative electrical charge. Because objects with the same charge normally push away from each other, DNA molecules might be expected to repel one another. Yet inside living cells, DNA must sometimes come into close contact and recognize matching sequences [here](https://www.sciencedaily.com/releases/2026/09/260909231717.htm)
 > cat poop help fight cancer [2014](https://www.sciencedaily.com/releases/2014/07/140715095515.htm)
+> caffein walaupun kacau tidur (ikut case), caffein also kacau waktu tgh tidur, buatkan brain wave lagi slow untuk semua orang [here](https://www.sciencedaily.com/releases/2026/09/260922005719.htm)
 
 ## nvidia blog
 > nvidia to acquire huggingface [here](https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/) |
