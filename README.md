@@ -56,6 +56,7 @@ tuxbot a botnet shows signs of being developed with assistance from LLM. the gen
 > Abused Google Play Store early access to distribute [trojan](https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html)
 > Claude can check if u misused its model for a very serios attack , some of are already too late, but they manage to stop the thing in Yemen but there are numerous cases group already utilised claude for making virus or campaign [here](https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html)
 > chrome risked with cleangulp with taking advantage of 2 CvE [here](https://thehackernews.com/2026/09/chinese-hackers-exploit-chrome-windows.html)
+> OpenAI agent hack medidcal portal [here](https://thehackernews.com/2026/09/openai-agent-bypassed-australian.html)
 
 
 
