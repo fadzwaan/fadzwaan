@@ -191,3 +191,11 @@ Build        : 26200
   - Optional NVIDIA Tesla P100 / Tesla T4 GPU
   - Free GPU and TPU usage subject to platform limits
   - [Technical Specifications](https://www.kaggle.com/docs/notebooks#technical-specifications)
+ 
+
+check ctftime latest ctf with this `curl -sL -A "Mozilla/5.0" "https://ctftime.org/api/v1/events/?limit=10&start=$(date +%s)" | jq -r '.[] | "\(.title) | \(.start) | \(.format) | \(.url)"'`
+
+check weather with this `curl.exe "https://wttr.in/Kuala+Lumpur"` or plan ur haj idk `curl.exe "https://wttr.in/Mecca"`
+
+check your friend in sprm list `curl.exe -sL "https://www.sprm.gov.my/index.php?id=21&page_id=96" | Select-String -Pattern "Thu Zar Myint" -Context 5,10` . sometime i wanna check for price for drill in mr diy `curl -sL -A "Mozilla/5.0" "https://mrdiy.com.my/search?q=drill" | grep -oiE '.{0,80}(RM[0-9]+(\.[0-9]{2})?).{0,80}' | head
+` idk i only knoews SPUS `curl -s -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/SPUS?interval=1m&range=1d" | jq -r '"SPUS: $" + (.chart.result[0].meta.regularMarketPrice|tostring)'`
