@@ -20,6 +20,16 @@
 
 - **Experiment Tracking and Management:** Integrated MLflow with a persistent SQLite tracking database to record machine-learning experiments, training parameters, and evaluation metrics.
 
+
+### DevOps, CI/CD & Software Security — INNUTRIRE
+
+- **GitHub Actions CI/CD:** Configured and troubleshot automated workflows for the INNUTRIRE machine learning repository, including Python syntax validation, unit testing, dependency auditing, and hospital SSH connectivity checks.
+- **Self-Hosted Runner Administration:** Deployed and configured a Windows-based GitHub Actions self-hosted runner, troubleshooting DNS resolution, runner connectivity, and execution environments.
+- **Dependency Security Assessment:** Investigated `CVE-2025-69872` affecting the transitive DiskCache dependency in DVC, tracing dependency relationships, reviewing Python deserialization behavior, and evaluating remediation options.
+- **Windows Security & Access Control:** Audited NTFS permissions using `icacls`, identified excessive write permissions in the GitHub Actions runner directory, and documented security risks and proposed mitigations.
+- **CI Pipeline Troubleshooting:** Diagnosed and corrected workflow configuration issues involving missing dependencies, inappropriate executable-build checks, Python environments, and automated test execution.
+- **Software Supply Chain Management:** Used `uv`, `pip-audit`, and dependency inspection tools to evaluate package vulnerabilities, dependency compatibility, and reproducibility requirements.
+
 - **CI/CD Workflow Troubleshooting:** Diagnosed and resolved GitHub Actions workflow registration, branch-specific execution, Python dependency, DVC repository detection, and MLflow tracking backend issues.
 
 - **Research and Production Isolation:** Established branch-isolated training workflows and manually triggered experimentation to prevent unvalidated machine-learning models from being automatically deployed to clinical environments.
